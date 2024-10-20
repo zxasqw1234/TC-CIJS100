@@ -1,0 +1,50 @@
+/* src/components/NavigationBar.css */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #192026;
+  color: white;
+}
+
+.navbar h1 {
+  font-size: 2.7rem;
+}
+.navbar h1:hover{
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  color: #868686;
+  font-size: 1.5rem;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+.search-container {
+  max-width: 300px;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-container input {
+  width: 450px;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  font-size: 1.5rem;
+  background-color: #374151;
+  color: #868686;
+}

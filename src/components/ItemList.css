@@ -1,0 +1,67 @@
+/* src/components/ItemList.css */
+.item-list {
+  background-color: #192026;
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.item-list h3 {
+  text-align: start;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.item-grid {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.item-card {
+  position: relative;
+  background-color: #192026;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+
+.item-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.item-image {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item-card h4 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+  color: white;
+}
+.item-card:before {
+  content: ""; /* Necessary for the pseudo-element */
+  position: absolute;
+  width: 200px;
+  bottom: 62px; /* Position at the bottom */
+  left: 16px;
+  right: 0;
+  height: 17%; /* Adjust height for the overlay */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  border-radius: 0 0 8px 8px; /* Round the bottom corners */
+  z-index: 0; /* Make sure it appears above the image */
+}
+.item-card p {
+  position: absolute;
+  bottom: 70px;
+  right: 70px;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
